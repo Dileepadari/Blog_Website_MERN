@@ -1,0 +1,89 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 100px;
+    border-radius: 6px;
+    background-color: var(--second-bg-color);
+}
+
+.formContainer, .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: var(--second-text-color);
+    color: var(--second-bg-color);
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+
+.wrapper{
+    padding: 50px 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socialButton{
+
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialButton:nth-child(2){
+    background-color: #ff5555;
+}
+
+.socialButton:nth-child(3){
+    background-color: #111;
+}
+
+.socialButton:nth-child(4){
+    background-color: #087BEA;
+}
+
+.separator{
+    text-align: center;
+    font-weight: 700;
+    color: var(--second-text-color);
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        padding: 100px 50px;
+    }
+    .wrapper{
+        padding: 50px 50px 0 50px;
+    }
+}

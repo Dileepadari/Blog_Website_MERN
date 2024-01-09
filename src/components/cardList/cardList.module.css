@@ -1,0 +1,19 @@
+.container{
+    flex:5;
+}
+
+.title{
+margin: 50px 0px;
+}
+
+
+
+.posts{
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .posts{
+        margin-right: 5px;
+    }
+}

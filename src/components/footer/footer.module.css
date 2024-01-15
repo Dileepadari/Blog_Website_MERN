@@ -42,10 +42,21 @@
     font-weight: 300;
 }
 
-.icons{
+.social{
     margin-top: 10px;
     display: flex;
     gap: 10px;
+}
+
+.socialicons1, .socialicons2, .socialicons3{
+    width: 28px;
+    height: 28px;
+}
+
+
+.proImage{
+    background-color: white;
+    border-radius: 30px;
 }
 
 
@@ -62,7 +73,7 @@
     .info{
         display: grid;
     }
-    .icons{
+    .social{
         justify-self: center;
         margin-bottom: 30px;
     }

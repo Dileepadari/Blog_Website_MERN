@@ -40,10 +40,10 @@
 
 
 .wrapper{
-    padding: 50px 100px 0 100px;
+    padding: 10px 100px 0 100px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 60px;
 }
 
 .socialButton{
@@ -61,15 +61,15 @@
     justify-content: center;
 }
 
-.socialButton:nth-child(2){
+.socialButton:nth-child(1){
     background-color: #ff5555;
 }
 
-.socialButton:nth-child(3){
+.socialButton:nth-child(2){
     background-color: #111;
 }
 
-.socialButton:nth-child(4){
+.socialButton:nth-child(3){
     background-color: #087BEA;
 }
 

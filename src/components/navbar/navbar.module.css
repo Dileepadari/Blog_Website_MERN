@@ -25,7 +25,15 @@
     gap: 20px;
     flex: 1;
     padding: 10px;
+    justify-content: flex-end;
 }
+
+.socialicons1, .socialicons2, .socialicons3{
+    width: 28px;
+    height: 28px;
+}
+
+
 
 
 @media screen and (max-width: 900px){

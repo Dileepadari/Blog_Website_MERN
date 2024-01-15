@@ -4,22 +4,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AuthLinks from '../authLinks/AuthLinks';
 import ThemeToggle from '../themeToggle/ThemeToggle';
+import { FaFacebook } from "react-icons/fa6";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.social}>
-                <Image src="/images/facebook.png" alt="facebook" width={24} height={24} />
-                <Image src="/images/instagram.png" alt="insta" width={24} height={24} />
-                <Image src="/images/youtube.png" alt="Utube" width={24} height={24} />
-                </div>
-            <div className={styles.logo}>ADK&nbsp;BLOGS</div>
-            <ThemeToggle />
+            <Link className={styles.logo} href="/">ADK&nbsp;BLOGS</Link>
             <div className={styles.links}>
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
-                <Link href="/contact">Contact</Link>
                 <AuthLinks />
+                <ThemeToggle />
+            </div>
+            <div className={styles.social}>
+                <a href='https://www.facebook.com/dileep.adari' target='_blank' ><FaFacebook className={styles.socialicons1} /></a>
+                <a href='https://www.instagram.com/dileepadari/' target='_blank'><PiInstagramLogoFill className={styles.socialicons2} /></a>
+                <a href='https://www.linkedin.com/in/dileep-kumar-adari-298169252/' target='_blank'><FaLinkedin className={styles.socialicons3} /></a>
             </div>
         </div>
     )

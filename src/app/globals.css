@@ -3,6 +3,7 @@
   --text-color: black;
   --second-bg-color: #f0f0f0;
   --second-text-color: #626262;
+  --common-color: rgb(238, 238, 238);
 }
 
 .dark{
@@ -10,6 +11,7 @@
   --text-color: white;
   --second-bg-color: #626262;
   --second-text-color: #f0f0f0;
+  --common-color: white;
 }
 *{
   padding: 0;
@@ -101,7 +103,7 @@ body {
 }
 :root {
     --bg-color: white;
-    --text-color: black;
+    --text-color: black;  
     --second-bg-color: #f0f0f0;
     --second-text-color: #626262;
 }

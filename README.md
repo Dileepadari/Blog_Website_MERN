@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+# Blog_Website_MERN
+A Blog website for pposting and reading blogs made with next.js, node.js, mongodb and prisma.    
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Problem Statement:    
+Create a blog website for reading and writing posts using HTML, CSS, Node.js and MongoDB for data storage.   
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Configuration
+Fill the .env.example file with required details and change the name to .env
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Running the project
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+In the folder, open terminal and run `npm install` - The required modules gets installed   
+Then run the project by running `npm run dev` on terminal.    
+Connect your wifi to something other than university wifi as Mongodb may not be accessible through College wifi.    
+The project will run on `localhost:3000` if your port is 3000, open it in chrome for better experience.    
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+# About the project
+This project is a simple blog system configured by limited categories.   
+The project is made using HTML, CSS, Node.js, Next.js,prisma in MongoDB.   
+The user can create a new account and can access their dashboard through login with same credentials.  
+The user can create a new post and can view all the posts.   
+The user can also logout from the dashboard.   
+The password have being hashed to assure the security of user account.   
+The user can Change theme if he want.   
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Screenshots
+## Home Page_LightMode:  
+![image](./sample_images/light_home.png)  
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Home Page_DarkMode:   
+![image](./sample_images/dark_home.png)   
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Recent_Blogs:    
+![image](./sample_images/recent_blogs.png)   
+
+## Write:    
+![image](./sample_images/write_page.png)   
+
+
+## About:    
+![image](./sample_images/about.png)    
+
+## Footer:    
+![image](./sample_images/footer.png)     

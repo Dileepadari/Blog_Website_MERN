@@ -2,24 +2,42 @@ import styles from './featured.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const Featured = () =>{
+
+const getPost = async (type) => {
+    const res = await fetch(`http://localhost:3000/api/extra?type=${type}`, {cache: "no-store"});
+
+    if(!res.ok){
+        throw new Error("Failed to get posts");
+    }
+    return await res.json();
+};
+
+
+const Featured = async() =>{
+    const type = "featured";
+    
+    const {posts} = await getPost(type);
+    if(!posts){
+        return <h1>No posts yet</h1>
+    }
     return(
-        <div className={styles.container}>
+            <div className={styles.container} key={posts[0].id}>
             <h1 className={styles.title}>
-                <b>Hey Delhi here!</b> These are some stories and creative ideas.
+                <b>Hey User! </b>Welcome to Delhi Blogs. These are some stories and creative ideas.
             </h1>
             <div className={styles.post}>
+                
+                {posts &&  posts[0].img &&   (
                 <div className={styles.imgContainer}>
-                    <Image src="/images/p1.jpeg" alt="image" fill />
-                </div>
+                    <Image src={`/images${posts[0].img}`} alt="image" fill />
+                </div>)
+                }
                 <div className={styles.txtContainer}>
                     <h1 className={styles.postTitle}>
-                        <Link href={""}>Lorem ipsum dolor sit amet.</Link>
+                        <Link href={`/posts/${posts[0].slug}`}>{posts[0].title}</Link>
                     </h1>
-                    <p className={styles.postDesc}>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam cupiditate placeat temporibus minima, hic quidem dicta laboriosam sunt quaerat eligendi ipsum saepe suscipit dolores voluptatem ratione, reiciendis illum beatae? Expedita quas officia optio recusandae quos eveniet obcaecati itaque error velit! Recusandae enim ipsum at laudantium rerum dicta aliquam nobis unde dolores! Expedita doloribus blanditiis corrupti similique in beatae a animi.
-                    </p>
-                    <button className={styles.button}>Read more</button>
+                    <p className={styles.postDesc} dangerouslySetInnerHTML={{ __html: posts ? posts[0]?.desc.substring(0, 400) : "" }} />
+                    <Link href={`/posts/${posts[0].slug}`} className={styles.button} >Read more</Link>
                 </div>
             </div>
         </div>

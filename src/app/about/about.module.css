@@ -1,0 +1,93 @@
+
+.slogan {
+    text-align: center;
+    margin-top: 6vw;
+    font-size: 2vw;
+}
+
+.totalContainer {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.meImgContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-basis: 50%;
+    border-top: 0;
+}
+
+.meImgContainer img {
+    position: relative;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+    padding: 2vw;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+}
+
+.creator{
+    text-align: center;
+    margin-right: 70vw;
+    margin-top: 40px;
+}
+
+.about {
+    margin-top: -10vw;
+    background: var(--bg-color);
+    border-radius: 15px;
+    padding: 10vw 2vw 2vw 2vw;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.education {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 20px;
+    gap: 50px
+}
+
+.missionTxt {
+    color: rgb(4, 4, 123);
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.aboutTxt {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 1vw 5vw;
+    padding: 2vw;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    text-indent: 5vw;
+    text-align: justify;
+}
+.webUse{
+    margin: auto;
+    background-color: var(--bg-color);
+    width: 83vw;
+    border-radius: 20px;
+    padding: 2vw 4vw;
+    font-size: 25px;
+}
+.webUse li{
+    color: rgb(110, 156, 255);
+    font-weight: 500;
+    text-shadow: 1px 1px var(--second-bg-color);
+    padding: 0.6vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .totalContainer {
+        width: 100vw;
+    }
+}
